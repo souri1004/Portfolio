@@ -1,111 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            /* Moved to external stylesheet */
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #444;
-            padding: 0.5rem 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .section {
-            margin-bottom: 2rem;
-        }
-        .section h2 {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-        .projects {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-        }
-        .project {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 1rem;
-            width: 300px;
-            text-align: center;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>My Portfolio</h1>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container">
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Hello! I am a web developer passionate about creating beautiful and functional websites. Welcome to my portfolio!</p>
-        </section>
-        <section id="projects" class="section">
-            <h2>My Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <h3>Project 1</h3>
-                    <p>A brief description of the project.</p>
-                </div>
-                <div class="project">
-                    <h3>Project 2</h3>
-                    <p>A brief description of the project.</p>
-                </div>
-                <div class="project">
-                    <h3>Project 3</h3>
-                    <p>A brief description of the project.</p>
-                </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <nav>
+          <div class="left">Sourav's Portfolio</div>
+          <div class="right">
+            <ul>
+              <li href="#home">Home</li>
+              <li href="#about">About</li>
+              <li href="#services">Services</li>
+              <li href="#projects">Projects</li>
+              <li href="#contact">Contact</li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="first">
+            <div class="leftSection">
+                <h1>Hi, I'm Sourav</h1>
+                <p>I'm a web developer.</p>
+            </div>
+            <div class="rightSection">
+                <h1>Hi, I'm Sourav</h1>
+                <p>I'm a web developer.</p>
             </div>
         </section>
-        <section id="contact" class="section">
-            <h2>Contact Me</h2>
-            <p>Email: yourname@example.com</p>
-            <p>Phone: +123 456 7890</p>
-        </section>
+
+      </main>
     </div>
-    <footer>
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-    </footer>
-</body>
+  </body>
 </html>
