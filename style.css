@@ -28,33 +28,20 @@ nav ul li {
   padding: 0px 20px;
 }
 
-.left {
-  font-size: 1.5em;
-}
-
-.first {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 30px;
-  color: #ffffff;
-  background-color: rgb(116, 116, 8);
-}
-
-.leftSection {
-  background-color: red;
-}
-
 .hero-section {
   position: relative;
+  height: 400px;
   background: linear-gradient(to right, #10192f, #2f195a);
   padding: 100px 50px;
   overflow: hidden;
 }
 
 .content {
-  max-width: 600px;
+  width: 50%;
   color: white;
   z-index: 2;
+  top: 40%;
+  left: 10%;
   position: relative;
 }
 
@@ -76,18 +63,18 @@ nav ul li {
 }
 
 .floating-card {
-  top: 100px;
-  right: 200px;
+  top: 80px;
+  right: 20%;
 }
 
 .code-snippet {
-  bottom: 100px;
-  right: 150px;
+  bottom: 70px;
+  right: 30%;
   background: #1e1e1e;
   color: #c5c5c5;
   font-family: monospace;
 }
 
 .hero-section {
-  clip-path: ellipse(80% 100% at 50% 100%);
+  clip-path: ellipse(90% 100% at 35% 0%);
 }
