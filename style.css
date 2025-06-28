@@ -3,33 +3,39 @@
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-snap-type: y mandatory;
+}
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #040429;
   background-color: rgb(255, 127, 0,.25);
 }
 
+
 .header-container {
-  margin-left: 15%;
-  margin-right: 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* <-- This is the key fix */
+  height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around; /* evenly spaced */
   align-items: center;
   color: rgb(255, 127, 0);
-  font-weight: 600;
-  font-size: small;
+  font-weight: 540;
+  font-size: 15px;
 }
 
 
 .menu {
-  width: 10%;
-  margin-left: 10%;
-  margin-right: 10px;
+  margin: 0;
+  padding: 0 10px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
+
 
 .logo-menu {
   padding-left: 0;
@@ -40,4 +46,56 @@ body {
 
 .logo {
   width: 30px;
+}
+
+.sidebar {
+  position: fixed;
+  margin-top: 50px;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100vh;;
+  color: rgb(255, 127, 0);
+  z-index: 1000; 
+}
+.line {
+  width: 1px;
+  height: 25vh;
+  color: rgb(255, 127, 0);
+  background-color: rgb(255, 127, 0);
+  margin-left: 50%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+.logos {
+  width: 30px;
+  margin-left: 20px;
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+}
+
+.a {
+  background-color: red;
+}
+.b {
+  background-color: blue;
+}
+.c {
+  background-color: green;
+}
+.d {
+  background-color: yellow;
+}
+
+section {
+  scroll-snap-align: start;
+  height: 100vh;
 }
