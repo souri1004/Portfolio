@@ -13,6 +13,10 @@ body {
   background-color: rgb(255, 127, 0,.25);
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 
 .header-container {
   position: fixed;
@@ -83,19 +87,38 @@ body {
 }
 
 .a {
-  background-color: red;
+  background-image: linear-gradient(to bottom right, black, rgb(73, 72, 72) );
 }
+ 
+  
 .b {
-  background-color: blue;
+  background-color: #161616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
+
 .c {
-  background-color: green;
+  background-image: url(img4.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 .d {
-  background-color: yellow;
+  background-image: url(img5.jpeg);
+  background-size: cover;
+  background-position: center;
 }
 
 section {
   scroll-snap-align: start;
+  scroll-snap-stop: always;
   height: 100vh;
+}
+
+.text {
+  padding-top: 400px;
+  padding-left: 20%;
+  color: rgb(255, 127, 0);
 }
