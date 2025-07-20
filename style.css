@@ -27,8 +27,8 @@ body {
   display: flex;
   justify-content: space-around; /* evenly spaced */
   align-items: center;
-  color: rgb(255, 127, 0);
-  font-weight: 540;
+  /* color: rgb(250, 126, 2); */
+  color: white;
   font-size: 15px;
 }
 
@@ -78,7 +78,7 @@ body {
 
 .logos {
   width: 30px;
-  margin-left: 20px;
+  margin-left: 20px; 
 }
 
 .content {
@@ -87,10 +87,11 @@ body {
 }
 
 .a {
-  background-image: linear-gradient(to bottom right, black, rgb(73, 72, 72) );
+  background-color: #4C5866;
+  /* background-image: linear-gradient(to bottom right, black, rgb(73, 72, 72) ); */
 }
- 
-  
+
+
 .b {
   background-color: #161616;
   display: flex;
