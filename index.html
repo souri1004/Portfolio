@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Sourav Chahar</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -13,16 +13,16 @@
   <body>
     <div class="layout" >
       <header>
-          <div class="header-container">
-            <div class="menu">Home</div>
-            <div class="menu">About</div>
-            <div class="menu">Tech Stack</div>
-            <div class="menu logo-menu">
-              <img src="logo.png" alt="Logo" class="logo" />
+          <div class="menu ">
+            <img src="logo.png" alt="Logo" class="logo" />
+          </div>
+          <div class="outer-container">
+            <div class="header-container">
+              <div class="hover-card" data-target="home"><i class="fa fa-home icon" aria-hidden="true" style="font-size: 150%;"></i><p class="hover-text">Home</p></div>
+              <div class="hover-card" data-target="techstack"><i class="fa fa-bars icon" aria-hidden="true" style="font-size: 150%;"></i><p class="hover-text">Tech Stack</p></div>
+              <div class="hover-card" data-target="portfolio"><i class="fa fa-paint-brush icon" aria-hidden="true"  style="font-size: 130%;"></i><p class="hover-text">Projects</p></div>
+              <div class="hover-card" data-target="contact"><i class="fa fa-envelope icon" aria-hidden="true" style="font-size: 150%;"></i><p class="hover-text">contact</p></div>
             </div>
-            <div class="menu">Projects</div>
-            <div class="menu">Coding Profiles</div>
-            <div class="menu">Contact</div>
           </div>
       </header>
 
@@ -32,9 +32,9 @@
           <div class="line"></div>
           <nav>
             <ul>
-              <li><i class="fa fa-github"style="font-size: 180%;margin-left: 35%;margin-top: 0px;margin-bottom: 20px;"></i></li>
-              <li><i class="fa fa-linkedin"style="font-size: 170%;margin-left: 37%;margin-top: 10px;margin-bottom: 20px;"></i></li>
-              <li><i class="fa fa-file-text-o"style="font-size: 160%;margin-left: 37%;margin-top: 15px;margin-bottom: 0px;"></i></li>
+              <li><a href="https://github.com/souri1004"><i class="fa fa-github"style="font-size: 180%;margin-left: 35%;margin-top: 0px;margin-bottom: 20px;"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/sourav-chahar-363b7a286/"><i class="fa fa-linkedin"style="font-size: 170%;margin-left: 37%;margin-top: 10px;margin-bottom: 20px;"></i></a></li>
+              <li><a href=""><i class="fa fa-file-text-o"style="font-size: 160%;margin-left: 37%;margin-top: 15px;margin-bottom: 0px;"></i></a></li>
             </ul>
           </nav>
           <div class="line"></div>
@@ -47,12 +47,12 @@
               <div class="text">
                 Software Developer
                 <br />
-                <div style="font-size: 15vh; ">Sourav<span style="color: white;">.</span></div>
+                <div style="font-size: 100px; ">Sourav<span style="color: white;">.</span></div>
               </div>
             </div>
           </section>
 
-          <section class="snap-section" id="about">
+          <section class="snap-section" id="techstack">
             <div class="content b" >
               <div style="background-color: yellow; ">
                 a
@@ -63,10 +63,50 @@
             </div>
           </section>
 
-          <section class="snap-section" id="portfolio"><div class="content c" >c</div></section>
+          <section class="snap-section" id="portfolio">
+            <div class="content c" >
+              <p>Projects</p>
+              
+              <a href=" https://www.reactbits.dev/components/infinite-menu">https://www.reactbits.dev/components/infinite-menu</a> 
+            </div>
+          </section>
           <section class="snap-section" id="contact"><div class="content d" >d</div></section>
         </main>
       </div>
     </div>
+    <script>
+      const sections = document.querySelectorAll('section');
+      const navItems = document.querySelectorAll('.hover-card');
+
+      const observer = new IntersectionObserver(
+        entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const id = entry.target.id;
+
+              navItems.forEach(item => {
+                item.classList.toggle('active', item.dataset.target === id);
+              });
+            }
+          });
+        },
+        {
+          threshold: 0.6, // triggers when 60% of the section is visible
+        }
+      );
+
+      sections.forEach(section => observer.observe(section));
+
+      navItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const targetId = item.dataset.target;
+          const section = document.getElementById(targetId);
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    </script>
+
   </body>
 </html>
