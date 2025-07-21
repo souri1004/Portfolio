@@ -9,7 +9,7 @@ html{
 
 body {
   font-family: 'Great Vibes', cursive;
-  color: #292938;
+  color: #5a5a63;
   background-color: rgba(7, 7, 7, 0.25);
 }
 
@@ -38,9 +38,9 @@ a {
   align-items: center;
   font-size: 15px;
   border-radius: 20px;
-  color: rgb(145, 144, 142);
-  background: rgba(100, 98, 98, 0.272); /* very light white on dark */
-  box-shadow: 0 0px 32px rgb(100, 98, 98);
+  color: #ff0000;
+  background: rgba(245, 135, 135, 0.272); /* very light white on dark */
+  box-shadow: 0 0px 32px rgb(216, 72, 72);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -114,14 +114,14 @@ a {
   left: 0;
   width: 100px;
   height: 100vh;;
-  color: rgb(255, 127, 0);
+  color: #ff0000;
   z-index: 1000; 
 }
 .line {
   width: 1px;
   height: 25vh;
-  color: rgb(255, 127, 0);
-  background-color: rgb(255, 127, 0);
+  color: #ff0000;
+  background-color: #ff0000;
   margin-left: 50%;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -175,5 +175,5 @@ section {
 .text {
   padding-top: 400px;
   padding-left: 20%;
-  color: rgb(255, 127, 0);
+  color: #cccccc;
 }
