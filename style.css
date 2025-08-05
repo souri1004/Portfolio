@@ -166,7 +166,8 @@ section {
 .profile-image {
   max-width: 100%;
   height: auto;
-  width: 500px; /* base size for large screens */
+  width: 500px;
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -176,13 +177,19 @@ section {
   }
 
   .profile-image {
-    content: hide;
-    width: 70vw; /* responsive width for smaller screens */
+    display: none;
+    width: 70vw; 
   }
 
   .text {
     font-size: 6vw;
   }
+
+  .sidebar {
+    display: none;
+  }
+
+  
 }
 
 
