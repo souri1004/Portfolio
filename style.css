@@ -10,7 +10,7 @@ html{
 body {
   font-family: 'Great Vibes', cursive;
   color: #5a5a63;
-  background-color: rgba(7, 7, 7, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 a {
@@ -104,7 +104,9 @@ a {
 
 .logo {
   padding-left: 10px;
+  margin-top: 40px;
   width: 40px;
+  position: fixed;
 }
 
 .sidebar {
@@ -136,14 +138,51 @@ a {
   margin-left: 20px; 
 }
 
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  height: 100vh;
+}
+
 .content {
   width: 100vw;
   height: 100vh;
 }
 
 .a {
-  background-color: #141414;
-  /* background-image: linear-gradient(to bottom right, black, rgb(73, 72, 72) ); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  padding: 2rem;
+}
+
+.text {
+  
+  color: #878686; /* or any color that suits your design */
+}
+
+.profile-image {
+  max-width: 100%;
+  height: auto;
+  width: 500px; /* base size for large screens */
+}
+
+@media screen and (max-width: 768px) {
+  .content.a {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image {
+    content: hide;
+    width: 70vw; /* responsive width for smaller screens */
+  }
+
+  .text {
+    font-size: 6vw;
+  }
 }
 
 
@@ -166,14 +205,5 @@ a {
   background-color: #141414;
 }
 
-section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  height: 100vh;
-}
 
-.text {
-  padding-top: 400px;
-  padding-left: 20%;
-  color: #cccccc;
-}
+
