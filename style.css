@@ -3,9 +3,7 @@
   margin: 0;
   padding: 0;
 }
-html{
-  scroll-snap-type: y mandatory;
-}
+
 
 body {
   font-family: 'Great Vibes', cursive;
@@ -139,8 +137,7 @@ a {
 }
 
 section {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+  
   height: 100vh;
 }
 
@@ -189,7 +186,7 @@ section {
     display: none;
   }
 
-  
+
 }
 
 
