@@ -175,6 +175,19 @@ a {
     text-align: center;
   }
 
+  .tech-item {
+    margin: 0;
+    width: 50px;
+  }
+
+  .tech-stack {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
   .profile-image {
     display: none;
     width: 70vw; 
@@ -182,6 +195,7 @@ a {
 
   .text {
     font-size: 6vw;
+    padding: 0px;
   }
 
   .sidebar {
