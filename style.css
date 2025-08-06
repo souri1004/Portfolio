@@ -189,7 +189,7 @@ a {
   }
 
   .profile-image {
-    display: none;
+    position: static;
     width: 70vw; 
   }
 
